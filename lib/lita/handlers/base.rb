@@ -79,7 +79,7 @@ module Lita::Handlers::PrRelease
         response.reply('前進 ASANA 打 Tag ！')
         asana = AsanaClient.new(ENV['ASANA_ACCESS_TOKEN'], ENV['ASANA_WORKSPACE'])
 
-        asana.run_version(pr_html_url, repo['prefix'], next_version, pr_html_url)
+        asana.run_version(asana_url_list, repo['prefix'], next_version, pr_html_url)
         response.reply('打完 Tags 了')
       else
         response.reply("可是瑞凡...我找了很久就是找不到 #{response.matches.flatten[1]} 喔~")
