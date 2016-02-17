@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = "lita-pr-release"
-  spec.version       = "0.1.0"
+  spec.version       = "0.1.1"
   spec.authors       = ["Sammy Lin"]
   spec.email         = ["sammylintw@gmail.com"]
   spec.description   = "use lita run pr release"
