@@ -91,7 +91,6 @@ module Lita::Handlers::PrRelease
       if repo
         begin
           response.reply(":running_dog: 比對 #{repo['repo_name']} #{response.matches.flatten[1]}...#{response.matches.flatten[2]} 的 Pull Request 中.....(小聲說...會跑很久喔~)")
-          slack = Slack::Notifier.new('https://hooks.slack.com/services/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')
 
           github = GithubClient.new(ENV['GITHUB_ACCESS_TOKEN'], repo['repo_name'])
           diff = github.diff_pr(response.matches.flatten[1], response.matches.flatten[2])
