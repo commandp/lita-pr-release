@@ -13,7 +13,7 @@ module Lita::Handlers::PrRelease
     end
 
     def tag
-      @workspace.typeahead(type: 'tag', query: @version).first || create_tag
+      @workspace.typeahead(type: 'tagxxx', query: @version).first || create_tag
     end
 
     def task(task_id)
