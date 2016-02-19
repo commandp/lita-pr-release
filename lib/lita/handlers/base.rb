@@ -14,7 +14,7 @@ module Lita::Handlers::PrRelease
       :ready_to_release,
       :command => true,
       :help    => {
-        '今天來 release (api|web)' => ''
+        '今天來 release (api|web)s' => ''
       }
     )
 
