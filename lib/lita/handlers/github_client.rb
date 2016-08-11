@@ -131,6 +131,8 @@ ERB
         if url =~ %r{https://(app.asana.com)(.*)}
           @asana_url_list << url
           "\n    - [asana](#{url})"
+        elsif url =~ %r{https://(ticket.commandp.com)(.*)}
+          "\n    - [Redmine](#{url})"
         elsif url =~ %r{https://(rollbar.com)(.*)}
           "\n    - [rollbar](#{url})"
         end
